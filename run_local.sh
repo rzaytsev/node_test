@@ -22,9 +22,9 @@ docker build -t node_app:"$app_version" .
 fi
 
 # uncomment if you want to push image to docker hub. (don't forget to run command: docker login)
-hub_user="rzaytsev"
-docker tag node_app:"$app_version" "$hub_user"/pageview_counter:"$app_version"
-docker push  "$hub_user"/pageview_counter:"$app_version"
+# hub_user="rzaytsev"
+# docker tag node_app:"$app_version" "$hub_user"/pageview_counter:"$app_version"
+# docker push  "$hub_user"/pageview_counter:"$app_version"
 
 
 # stop all containers with a name node_app
