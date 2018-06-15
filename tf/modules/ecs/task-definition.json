@@ -1,0 +1,28 @@
+[
+  {
+    "cpu": 256,
+    "essential": true,
+    "image": "${image_url}",
+    "memory": 512,
+    "name": "${container_name}",
+    "portMappings": [
+      {
+        "containerPort": 8888,
+        "hostPort": 8888
+      }
+    ],
+    "environment": [
+        {
+          "name": "REDIS_ADDRESS",
+          "value": "${redis_address}"
+        }
+      ],
+    "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+            "awslogs-group": "${log_group_name}",
+            "awslogs-region": "${log_group_region}"
+        }
+    }
+  }
+]

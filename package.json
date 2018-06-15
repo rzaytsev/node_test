@@ -1,0 +1,13 @@
+{
+  "name": "pageviwer_counter",
+  "version": "1.0.0",
+  "description": "pageviwe_counter",
+  "author": "Roman Zaytsev <r.zaytsev@me.com>",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "redis": "^2.8.0"
+  }
+}
